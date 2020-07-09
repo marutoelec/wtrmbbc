@@ -1,0 +1,47 @@
+$imgheight: 700px;
+
+.hero {
+  @extend .pb-lg;
+
+  img {
+    display: block;
+    margin: 0 auto;
+    height: $imgheight;
+  }
+
+  .swiper-slide {
+    height: $imgheight;
+    overflow: hidden;
+
+    .hero__title {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, calc(-50% + 25px));
+      color: white;
+      font-size: 30px;
+      opacity: 0;
+      transition: transform 1s 1s, opacity 1s ease 1s;
+    }
+
+    & > img {
+      // width: 100%;
+      height: 100%;
+      max-width: 100%;
+      object-fit: cover;
+      transform: scale(1.3);
+      transition: transform 1.2s ease;
+    }
+
+    &-active {
+      & > img {
+        transform: none;
+      }
+
+      & .hero__title {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}

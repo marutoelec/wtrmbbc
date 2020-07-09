@@ -1,0 +1,77 @@
+/******************************************************************
+
+Stylesheet: 960px以上のモニタで適用
+
+******************************************************************/
+
+.font-sm {
+  font-size: 16px;
+}
+.font-md {
+  font-size: 19px;
+}
+.font-lr {
+  font-size: 23px;
+}
+.font-lg {
+  font-size: 36px;
+}
+
+.mb-lg {
+  margin-bottom: 150px !important;
+}
+.pb-lg {
+  padding-bottom: 150px !important;
+}
+
+.flex {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.header,.footer {
+  &__li {
+    font-size: 1.5rem;
+    padding-left: 1.2rem;
+  }
+}
+
+.header {
+  &__nav {
+    display: block;
+  }
+}
+
+.mobile-menu__btn {
+  display: none;
+}
+
+.team,.recruit {
+  &__inner {
+    padding: 50px;
+  }
+
+  &__img,
+  &__texts {
+    flex-basis: 47%;
+  }
+}
+
+.recruit{
+  &__inner {
+    flex-direction: row-reverse;
+    
+  }
+
+  &__img,
+  &__texts {
+    flex-basis: 47%;
+  }
+}
+
+.line {
+ 
+  &__inner {
+    padding: 0 100px;
+  }
+}
