@@ -2,12 +2,11 @@
 .hero img {
   display: block;
   margin: 0 auto;
-  height: 500px;
+  height: 600px;
 }
 
 .hero .swiper-slide {
-  height: 500px;
-  overflow: hidden;
+  height: 600px;
 }
 
 .hero .swiper-slide .hero__title {
@@ -26,10 +25,11 @@
 }
 
 .hero .swiper-slide > img {
-  height: 100%;
+  width: 90%;
+  text-align: center;
   max-width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
   -webkit-transition: -webkit-transform 1.2s ease;
@@ -45,6 +45,7 @@
 
 .hero .swiper-slide-active .hero__title {
   opacity: 1;
+  font-weight: 900;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
@@ -52,12 +53,11 @@
 .hero img {
   display: block;
   margin: 0 auto;
-  height: 500px;
+  height: 600px;
 }
 
 .hero .swiper-slide {
-  height: 500px;
-  overflow: hidden;
+  height: 600px;
 }
 
 .hero .swiper-slide .hero__title {
@@ -76,10 +76,11 @@
 }
 
 .hero .swiper-slide > img {
-  height: 100%;
+  width: 90%;
+  text-align: center;
   max-width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
   -webkit-transition: -webkit-transform 1.2s ease;
@@ -95,6 +96,7 @@
 
 .hero .swiper-slide-active .hero__title {
   opacity: 1;
+  font-weight: 900;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
@@ -920,7 +922,7 @@ img {
   max-width: 1070px;
 }
 
-.header-fix, .team, .recruit, .tab {
+.header-fix, .team, .recruit, .media {
   padding-top: 170px;
   margin-top: -170px;
 }

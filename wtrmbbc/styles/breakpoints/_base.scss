@@ -155,9 +155,12 @@ img {
       }
 }
 
+.media {
+  @extend .header-fix;
+}
+
 .tab {
   @extend .content-width;
-  @extend .header-fix;
   &__content {
     text-align: center;
   }
