@@ -50,6 +50,8 @@
   opacity: 0;
 
   .inview & {
+    object-fit: contain;
+    object-position: top;
     opacity: 1;
     transition: transform 0.3s ease;
     @include animation(

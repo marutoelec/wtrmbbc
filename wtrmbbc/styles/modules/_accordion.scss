@@ -28,7 +28,7 @@
     // border-color: #aaa;
     // box-sizing: border-box;
     // overflow: hidden;
-    
+
     &_head {
         padding: 5px;
         background: #aaa;
@@ -36,6 +36,11 @@
         color: #fff;
         cursor: pointer;
         box-sizing: border-box;
+
+        span {
+            margin-left: 10px;
+            margin-right: 5px;
+        }
     }
     
     
@@ -49,7 +54,8 @@
         overflow: hidden;
         
         p {
-            margin: 20px 0;
+            // margin: 20px 0;
+            padding-left: 10px;
             // padding: 10px 0;
         }
         

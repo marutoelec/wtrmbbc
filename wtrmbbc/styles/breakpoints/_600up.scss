@@ -30,31 +30,31 @@ Stylesheet: 600px以上のタブレットやモニタで適用
   }
 }
 
-.tab {
-  display: none;
-}
+// .tab {
+//   display: none;
+// }
 
-.line {
-  display: block;
-  width: 90%;
-  margin: 0 auto;
+// .line {
+//   display: block;
+//   width: 90%;
+//   margin: 0 auto;
   
-  &__inner {
-    padding: 0 50px;
-  }
+//   &__inner {
+//     padding: 0 50px;
+//   }
   
-  &__wrap {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 50px;
-  }
+//   &__wrap {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-between;
+//     margin-bottom: 50px;
+//   }
   
-  &__content {
-    flex-basis: 47%;
-    box-shadow: 2px 2px 4px -2px gray;
-  }
-}
+//   &__content {
+//     flex-basis: 47%;
+//     box-shadow: 2px 2px 4px -2px gray;
+//   }
+// }
 
 .footer {
   &__wrap {

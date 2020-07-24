@@ -44,8 +44,10 @@ img {
   }
 
 .header-fix {
-  padding-top: $headerHeight+70px;
-  margin-top: -($headerHeight+70px);
+  padding-top: $headerHeight+65px;
+  // padding-top: $headerHeight;
+  margin-top: -($headerHeight+65px);
+  // margin-top: -($headerHeight);
 }
 
 .flex {
@@ -60,7 +62,7 @@ img {
   top: 0;
   left: 0;
   height: $headerHeight;
-  background-color: #fff;
+  background-color: rgba($color: #88e297, $alpha: 0.9);
   z-index: 10;
   
   &__inner {
@@ -92,8 +94,19 @@ img {
     }
   }
   .sitename {
+    display: flex;
+    // padding-left: 65px;
+    align-items: center;
     font-size: 35px;
     line-height: 2.4;
+    // background-image: url(/wtrmbbc/images/wmbbc_logo.png);
+    // background-repeat: no-repeat;
+    // background-size: contain;
+
+    h2 {
+      font-size: 8.5vw;
+      margin-bottom: 0;
+    }
     &__img {
       width: 1.9em;
     }
@@ -106,7 +119,7 @@ img {
 
 .team,.recruit{
   @extend .content-width;
-  @extend .mb-lg;
+  // @extend .mb-lg;
   @extend .header-fix;
   
   &__inner{
@@ -118,7 +131,7 @@ img {
   }
 
   &__img {
-    height: 300px;
+    height: auto;
     @extend .mb-sm;
 
     & > img {
@@ -132,7 +145,7 @@ img {
 
   &__texts {
     // padding-left: 40px;
-    @extend .font-lr;
+    font-size: 2.1vw;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
@@ -153,22 +166,32 @@ img {
           text-align: start;
         }
       }
+  .dt_text {
+    display: none;
+  }
+  .btn {
+    width: 95%;
+  }
 }
 
 .media {
   @extend .header-fix;
 }
 
-.tab {
-  @extend .content-width;
-  &__content {
-    text-align: center;
+
+#tab__youtube {
+  iframe {
+    position: absolute;
+    width: 90%;
+    height: 63%;
   }
+
 }
 
-.line {
- display: none;
-}
+
+// .line {
+//  display: none;
+// }
 
 .footer {
   padding: 50px 0;
@@ -198,8 +221,7 @@ img {
   }
 
   .sitename {
-    font-size: 40px;
-    line-height: 85px;
+    font-size: 8vw;
     &__img {
       width: 1.8em;
     }

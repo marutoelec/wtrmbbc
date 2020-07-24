@@ -5,15 +5,18 @@
 @import 'modules/image-slide';
 @import 'modules/button';
 @import 'modules/accordion';
-@import 'modules/tab';
 @import 'modules/mobile-menu';
 @import 'modules/modal';
 
 
 @import 'breakpoints/base';
 
-@media screen and (min-width: 480px){
-    @import 'breakpoints/480up';
+// @media screen and (min-width: 480px){
+    //     @import 'breakpoints/480up';
+    // }
+@media screen and (max-width: 599px){
+    @import 'modules/tab';
+
 }
 @media screen and (min-width: 600px){
     @import 'breakpoints/600up';
@@ -21,18 +24,18 @@
 @media screen and (min-width: 960px){
     @import 'breakpoints/960up';
 }
-@media screen and (min-width: 1280px){
-    @import 'breakpoints/1280up';
-}
+// @media screen and (min-width: 1280px){
+//     @import 'breakpoints/1280up';
+// }
 
 @media (min-resolution: 192dpi),
     (-webkit-min-device-pixel-ratio: 2) {
     @import 'breakpoints/2x';      
 }
 
-@media print {
-    @import 'breakpoints/print';
-}
+// @media print {
+//     @import 'breakpoints/print';
+// }
 
 
 

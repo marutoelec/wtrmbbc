@@ -1,12 +1,17 @@
 @charset "UTF-8";
+.hero {
+  padding-bottom: 10px;
+}
+
 .hero img {
   display: block;
   margin: 0 auto;
-  height: 600px;
+  height: 480px;
 }
 
 .hero .swiper-slide {
-  height: 600px;
+  height: 480px;
+  overflow: hidden;
 }
 
 .hero .swiper-slide .hero__title {
@@ -27,6 +32,7 @@
 .hero .swiper-slide > img {
   width: 90%;
   text-align: center;
+  height: 100%;
   max-width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
@@ -46,18 +52,24 @@
 .hero .swiper-slide-active .hero__title {
   opacity: 1;
   font-weight: 900;
+  text-shadow: 1px 2px 3px #808080;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
 
+.hero {
+  padding-bottom: 10px;
+}
+
 .hero img {
   display: block;
   margin: 0 auto;
-  height: 600px;
+  height: 480px;
 }
 
 .hero .swiper-slide {
-  height: 600px;
+  height: 480px;
+  overflow: hidden;
 }
 
 .hero .swiper-slide .hero__title {
@@ -78,6 +90,7 @@
 .hero .swiper-slide > img {
   width: 90%;
   text-align: center;
+  height: 100%;
   max-width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
@@ -97,6 +110,7 @@
 .hero .swiper-slide-active .hero__title {
   opacity: 1;
   font-weight: 900;
+  text-shadow: 1px 2px 3px #808080;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
@@ -343,6 +357,10 @@
 }
 
 .inview .img-zoom, .inview .bg-img-zoom {
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: top;
+     object-position: top;
   opacity: 1;
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
@@ -572,6 +590,11 @@
           box-sizing: border-box;
 }
 
+.acd_menu_head span, .acdc_menu_head span {
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
 .acd_menu_body, .acdc_menu_body {
   height: 0;
   padding: 0px 20px;
@@ -579,61 +602,11 @@
 }
 
 .acd_menu_body p, .acdc_menu_body p {
-  margin: 20px 0;
+  padding-left: 10px;
 }
 
 .acd_menu_body.acd-active, .acdc_menu_body.acd-active {
   height: 100% !important;
-}
-
-.tab {
-  font-size: 14px;
-  margin: 20px auto;
-  width: 600px;
-}
-
-.tab__label {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.tab__label li a {
-  display: inline-block;
-  width: 130px;
-  text-align: center;
-  padding: 8px 0;
-  color: #333;
-  text-decoration: none;
-  border-radius: 10px 10px 0 0;
-}
-
-.tab__label li a.active {
-  background: #096F0A;
-  color: white;
-}
-
-.tab__label li a:not(.active):hover {
-  opacity: 0.5;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-.tab__content {
-  display: none;
-}
-
-.tab__content.active {
-  background: #096F0A;
-  color: white;
-  font-size: 16px;
-  min-height: 150px;
-  height: 100%;
-  padding: 15px;
-  display: block;
 }
 
 #container {
@@ -892,7 +865,7 @@ img {
   font-size: 17px;
 }
 
-.font-lr, .team__texts, .recruit__texts {
+.font-lr {
   font-size: 17px;
 }
 
@@ -904,7 +877,7 @@ img {
   margin-bottom: 16px !important;
 }
 
-.mb-lg, .team, .recruit {
+.mb-lg {
   margin-bottom: 80px !important;
 }
 
@@ -912,19 +885,19 @@ img {
   padding-bottom: 16px !important;
 }
 
-.pb-lg, .hero {
+.pb-lg {
   padding-bottom: 80px !important;
 }
 
-.content-width, .header__inner, .team, .recruit, .tab, .footer {
+.content-width, .header__inner, .team, .recruit, .footer {
   width: 90%;
   margin: 0 auto;
   max-width: 1070px;
 }
 
 .header-fix, .team, .recruit, .media {
-  padding-top: 170px;
-  margin-top: -170px;
+  padding-top: 140px;
+  margin-top: -140px;
 }
 
 .flex, .header__ul, .team__inner, .recruit__inner, .footer__ul {
@@ -943,8 +916,8 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-  height: 100px;
-  background-color: #fff;
+  height: 75px;
+  background-color: rgba(136, 226, 151, 0.9);
   z-index: 10;
 }
 
@@ -977,8 +950,19 @@ img {
 }
 
 .header .sitename {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 35px;
   line-height: 2.4;
+}
+
+.header .sitename h2 {
+  font-size: 8.5vw;
+  margin-bottom: 0;
 }
 
 .header .sitename__img {
@@ -986,7 +970,7 @@ img {
 }
 
 .hero {
-  padding-top: 100px;
+  padding-top: 75px;
 }
 
 .team__inner, .recruit__inner {
@@ -999,7 +983,7 @@ img {
 }
 
 .team__img, .recruit__img {
-  height: 300px;
+  height: auto;
 }
 
 .team__img > img, .recruit__img > img {
@@ -1012,6 +996,7 @@ img {
 }
 
 .team__texts, .recruit__texts {
+  font-size: 2.1vw;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
@@ -1034,12 +1019,18 @@ img {
   text-align: start;
 }
 
-.tab__content {
-  text-align: center;
+.team .dt_text, .recruit .dt_text {
+  display: none;
 }
 
-.line {
-  display: none;
+.team .btn, .recruit .btn {
+  width: 95%;
+}
+
+#tab__youtube iframe {
+  position: absolute;
+  width: 90%;
+  height: 63%;
 }
 
 .footer {
@@ -1069,20 +1060,64 @@ img {
 }
 
 .footer .sitename {
-  font-size: 40px;
-  line-height: 85px;
+  font-size: 8vw;
 }
 
 .footer .sitename__img {
   width: 1.8em;
 }
 
-@media screen and (min-width: 480px) {
-  /******************************************************************
-
-Stylesheet: 480px以上(スマホの横向き)のモニタで適用
-
-******************************************************************/
+@media screen and (max-width: 599px) {
+  .tab {
+    font-size: 14px;
+    margin: 20px auto;
+    width: 90%;
+  }
+  .tab__label {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .tab__label li {
+    -ms-flex-preferred-size: 33.333%;
+        flex-basis: 33.333%;
+  }
+  .tab__label li a {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 8px 0;
+    color: #333;
+    text-decoration: none;
+    border-radius: 10px 10px 0 0;
+  }
+  .tab__label li a.active {
+    background: #096F0A;
+    color: white;
+  }
+  .tab__label li a:not(.active):hover {
+    opacity: 0.5;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  .tab__content {
+    display: none;
+  }
+  .tab__content.active {
+    background: #096F0A;
+    color: white;
+    font-size: 16px;
+    min-height: 300px;
+    height: 100%;
+    padding: 15px;
+    display: block;
+    position: relative;
+    padding-top: 3%;
+    overflow: hidden;
+  }
 }
 
 @media screen and (min-width: 600px) {
@@ -1117,34 +1152,6 @@ Stylesheet: 600px以上のタブレットやモニタで適用
   .team__inner {
     padding: 50px;
   }
-  .tab {
-    display: none;
-  }
-  .line {
-    display: block;
-    width: 90%;
-    margin: 0 auto;
-  }
-  .line__inner {
-    padding: 0 50px;
-  }
-  .line__wrap {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin-bottom: 50px;
-  }
-  .line__content {
-    -ms-flex-preferred-size: 47%;
-        flex-basis: 47%;
-    -webkit-box-shadow: 2px 2px 4px -2px gray;
-            box-shadow: 2px 2px 4px -2px gray;
-  }
   .footer__wrap {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1174,16 +1181,16 @@ Stylesheet: 960px以上のモニタで適用
   .font-md {
     font-size: 19px;
   }
-  .font-lr, .team__texts, .recruit__texts {
+  .font-lr {
     font-size: 23px;
   }
   .font-lg {
     font-size: 36px;
   }
-  .mb-lg, .team, .recruit {
+  .mb-lg {
     margin-bottom: 150px !important;
   }
-  .pb-lg, .hero {
+  .pb-lg {
     padding-bottom: 150px !important;
   }
   .flex, .header__ul, .team__inner, .recruit__inner, .footer__ul {
@@ -1221,17 +1228,6 @@ Stylesheet: 960px以上のモニタで適用
     -ms-flex-preferred-size: 47%;
         flex-basis: 47%;
   }
-  .line__inner {
-    padding: 0 100px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  /******************************************************************
-
-Stylesheet: 1280px以上のモニタで適用
-
-******************************************************************/
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -1249,13 +1245,5 @@ EXAMPLE
 }
 
 */
-}
-
-@media print {
-  /******************************************************************
-
-Stylesheet: プリンタのみに適用
-
-******************************************************************/
 }
 /*# sourceMappingURL=style.css.map */
