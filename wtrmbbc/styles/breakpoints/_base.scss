@@ -145,7 +145,7 @@ img {
 
   &__texts {
     // padding-left: 40px;
-    font-size: 2.1vw;
+    // font-size: 2.1vw;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
@@ -153,19 +153,27 @@ img {
   &__title {
     text-align: center;
         font-weight: bold;
-        font-size: 1.3em;
+        // font-size: 1.3em;
         line-height: 1.1;
         @extend .mb-sm;
-      }
+  }
 
-      &__btn {
-        text-align: center;
-        flex-basis: 100%;
+  &__description {
+    font-size: 4vw;
+  }
 
-        .acd_menu_body{
-          text-align: start;
-        }
-      }
+  &__btn {
+    text-align: center;
+    flex-basis: 100%;
+
+    .acd_menu_body{
+      text-align: start;
+    }
+  }
+  h1,h2 {
+    font-size: 4.2vw;
+  }
+
   .dt_text {
     display: none;
   }
@@ -221,9 +229,16 @@ img {
   }
 
   .sitename {
-    font-size: 8vw;
+    font-size: 7.5vw;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    // text-align: center;
     &__img {
       width: 1.8em;
+    }
+    h2 {
+      font-size: 7vw;
     }
   }
 }

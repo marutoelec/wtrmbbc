@@ -21,7 +21,7 @@
 // }
 
 .mobile-menu {
-    width: 300px;
+    width: 250px;
     position: fixed;
     top: 60px;
     right: 0;
@@ -147,7 +147,7 @@
     }
 
     & #container {
-        transform: translate(-300px, 60px);
+        transform: translate(-250px, 60px);
         box-shadow: 0 8px 40px -10px rgba(0,0,0,0.8);
     }
 

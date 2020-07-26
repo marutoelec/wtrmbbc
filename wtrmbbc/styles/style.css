@@ -605,6 +605,10 @@
   padding-left: 10px;
 }
 
+.acd_menu_body p span, .acdc_menu_body p span {
+  font-weight: bold;
+}
+
 .acd_menu_body.acd-active, .acdc_menu_body.acd-active {
   height: 100% !important;
 }
@@ -619,7 +623,7 @@
 }
 
 .mobile-menu {
-  width: 300px;
+  width: 250px;
   position: fixed;
   top: 60px;
   right: 0;
@@ -771,8 +775,8 @@
 }
 
 .menu-open #container {
-  -webkit-transform: translate(-300px, 60px);
-          transform: translate(-300px, 60px);
+  -webkit-transform: translate(-250px, 60px);
+          transform: translate(-250px, 60px);
   -webkit-box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.8);
           box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.8);
 }
@@ -996,7 +1000,6 @@ img {
 }
 
 .team__texts, .recruit__texts {
-  font-size: 2.1vw;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
@@ -1005,8 +1008,11 @@ img {
 .team__title, .recruit__title {
   text-align: center;
   font-weight: bold;
-  font-size: 1.3em;
   line-height: 1.1;
+}
+
+.team__description, .recruit__description {
+  font-size: 4vw;
 }
 
 .team__btn, .recruit__btn {
@@ -1017,6 +1023,10 @@ img {
 
 .team__btn .acd_menu_body, .recruit__btn .acd_menu_body {
   text-align: start;
+}
+
+.team h1, .team h2, .recruit h1, .recruit h2 {
+  font-size: 4.2vw;
 }
 
 .team .dt_text, .recruit .dt_text {
@@ -1060,11 +1070,24 @@ img {
 }
 
 .footer .sitename {
-  font-size: 8vw;
+  font-size: 7.5vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .footer .sitename__img {
   width: 1.8em;
+}
+
+.footer .sitename h2 {
+  font-size: 7vw;
 }
 
 @media screen and (max-width: 599px) {
