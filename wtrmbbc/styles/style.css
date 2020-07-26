@@ -921,7 +921,7 @@ img {
   top: 0;
   left: 0;
   height: 75px;
-  background-color: rgba(136, 226, 151, 0.9);
+  background-color: #d5f3da;
   z-index: 10;
 }
 
@@ -965,7 +965,7 @@ img {
 }
 
 .header .sitename h2 {
-  font-size: 8.5vw;
+  font-size: 7.2vw;
   margin-bottom: 0;
 }
 
