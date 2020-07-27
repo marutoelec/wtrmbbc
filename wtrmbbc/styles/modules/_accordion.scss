@@ -47,7 +47,10 @@
     
     &_body {
         height: 0;
-        padding: 0px 20px;
+        // padding: 0px 20px;
+        width: 90%;
+        margin: auto;
+        // padding-bottom: 3px;
         // border: 1px solid #aaa;
         // border-width: 0 1px;
         // box-sizing: border-box;
@@ -55,12 +58,15 @@
         
         p {
             // margin: 20px 0;
-            padding-left: 10px;
+            // padding-left: 10px;
+            width: 95%;
+            margin: auto;
+            padding-bottom: 3px;
             // padding: 10px 0;
 
-            span {
-                font-weight: bold;
-            }
+            // span {
+            //     font-weight: bold;
+            // }
         }
         
         &.acd-active{

@@ -69,7 +69,8 @@ img {
     @extend .content-width;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    // align-items: center;
+    height: 75px;
   }
   
   // &__wrap {
@@ -97,14 +98,14 @@ img {
     display: flex;
     // padding-left: 65px;
     align-items: center;
-    font-size: 35px;
-    line-height: 2.4;
+    font-size: 25px;
+    // line-height: 2.4;
     // background-image: url(/wtrmbbc/images/wmbbc_logo.png);
     // background-repeat: no-repeat;
     // background-size: contain;
 
     h2 {
-      font-size: 6.2vw;
+      font-size: 7.2vw;
       margin-bottom: 0;
     }
     &__img {
@@ -148,11 +149,11 @@ img {
     // font-size: 2.1vw;
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
   }
   &__title {
     text-align: center;
-        font-weight: bold;
+        // font-weight: bold;
         // font-size: 1.3em;
         line-height: 1.1;
         @extend .mb-sm;
@@ -173,6 +174,9 @@ img {
   h1,h2 {
     font-size: 4.2vw;
   }
+  p{
+    font-size: 4vw;
+  }
 
   .dt_text {
     display: none;
@@ -180,6 +184,10 @@ img {
   .btn {
     width: 95%;
   }
+}
+
+.recruit p span {
+  font-weight: bold;
 }
 
 .media {

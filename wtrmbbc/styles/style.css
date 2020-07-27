@@ -597,16 +597,15 @@
 
 .acd_menu_body, .acdc_menu_body {
   height: 0;
-  padding: 0px 20px;
+  width: 90%;
+  margin: auto;
   overflow: hidden;
 }
 
 .acd_menu_body p, .acdc_menu_body p {
-  padding-left: 10px;
-}
-
-.acd_menu_body p span, .acdc_menu_body p span {
-  font-weight: bold;
+  width: 95%;
+  margin: auto;
+  padding-bottom: 3px;
 }
 
 .acd_menu_body.acd-active, .acdc_menu_body.acd-active {
@@ -805,7 +804,7 @@
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 100%;
+  width: 90%;
   max-width: 600px;
   padding-top: 25px;
   background-color: #fff;
@@ -932,9 +931,7 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  height: 75px;
 }
 
 .header__nav {
@@ -960,12 +957,11 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 35px;
-  line-height: 2.4;
+  font-size: 25px;
 }
 
 .header .sitename h2 {
-  font-size: 6.2vw;
+  font-size: 7.2vw;
   margin-bottom: 0;
 }
 
@@ -1002,12 +998,11 @@ img {
 .team__texts, .recruit__texts {
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .team__title, .recruit__title {
   text-align: center;
-  font-weight: bold;
   line-height: 1.1;
 }
 
@@ -1029,12 +1024,20 @@ img {
   font-size: 4.2vw;
 }
 
+.team p, .recruit p {
+  font-size: 4vw;
+}
+
 .team .dt_text, .recruit .dt_text {
   display: none;
 }
 
 .team .btn, .recruit .btn {
   width: 95%;
+}
+
+.recruit p span {
+  font-weight: bold;
 }
 
 #tab__youtube iframe {
