@@ -493,7 +493,7 @@
 }
 
 .btn.filled {
-  background-color: black;
+  background-color: #096F0A;
   color: white;
   -webkit-box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
           box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
@@ -1254,22 +1254,5 @@ Stylesheet: 960px以上のモニタで適用
     -ms-flex-preferred-size: 47%;
         flex-basis: 47%;
   }
-}
-
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  /******************************************************************
-
-Stylesheet: Retinaディスプレイで適用
-
-******************************************************************/
-  /* 
-
-EXAMPLE 
-.icon {
-	background: url(images/test@2x.png) no-repeat;
-	background-size: 24px 24px;
-}
-
-*/
 }
 /*# sourceMappingURL=style.css.map */
