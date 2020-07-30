@@ -25,32 +25,33 @@ backGrounds.forEach((clickedHead) => {
   clickedHead.addEventListener("click", () => {
     const modal = clickedHead.closest(".modal");
     modal.classList.remove("is-show");
+    bodyFixedOff();
   });
 });
 
 // モーダル表示時の背景固定はmobile-menu.jsで設定済
 
-// let scrollPosition;
-// const ua = window.navigator.userAgent.toLowerCase();
-// const isiOS = ua.indexOf('iphone') > -1 || ua.indexOf('ipad') > -1 || ua.indexOf('macintosh') > -1 && 'ontouchend' in document;
-// const body = document.querySelector('body');
+let scrollPosition;
+const ua = window.navigator.userAgent.toLowerCase();
+const isiOS = ua.indexOf('iphone') > -1 || ua.indexOf('ipad') > -1 || ua.indexOf('macintosh') > -1 && 'ontouchend' in document;
+const body = document.querySelector('body');
 
-// function bodyFixedOn() {
-//     if(isiOS){
-//         scrollPosition = window.pageYOffset;
-//         body.style.position = 'fixed';
-//         body.style.top = `-${scrollPosition}px`;
-//     }else {
-//         body.style.overflow = 'hidden';
-//     }
-// }
+function bodyFixedOn() {
+    if(isiOS){
+        scrollPosition = window.pageYOffset;
+        body.style.position = 'fixed';
+        body.style.top = `-${scrollPosition}px`;
+    }else {
+        body.style.overflow = 'hidden';
+    }
+}
 
-// function bodyFixedOff() {
-//     if(isiOS){
-//         body.style.removeProperty('position');
-//         body.style.removeProperty('top');
-//         window.scrollTo(0, scrollPosition);
-//     }else {
-//         body.style.removeProperty('overflow');
-//     }
-// }
+function bodyFixedOff() {
+    if(isiOS){
+        body.style.removeProperty('position');
+        body.style.removeProperty('top');
+        window.scrollTo(0, scrollPosition);
+    }else {
+        body.style.removeProperty('overflow');
+    }
+}
