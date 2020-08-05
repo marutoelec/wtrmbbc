@@ -1,81 +1,41 @@
-// body {
-//     font-size: 14px;
-//     line-height: 1.5;
-//     color: #333;
-// }
-// a {
-//     text-decoration: none;
-//     color: #333;
-// }
-// img {
-//     vertical-align: bottom;
-// }
-// .clearfix {
-//     display: table;
-//     clear: both;
-// }
-// .container {
-//     width: 400px;
-//     margin: 0 auto;
-//     padding: 50px 0;
-//     background: #fff;
-// }
-
-
-.acd_menu,.acdc_menu {
-    // border-width: 1px 0 1px;
-    // border-style: solid;
-    // border-color: #aaa;
-    // box-sizing: border-box;
-    // overflow: hidden;
-
+@media screen and (max-width: 599px) {
+  .acd_menu,
+  .acdc_menu {
     &_head {
-        padding: 5px;
-        background: #aaa;
-        border-bottom: 1px solid #fff;
-        color: #fff;
-        cursor: pointer;
-        box-sizing: border-box;
+      padding: 5px;
+      background: #aaa;
+      border-bottom: 1px solid #fff;
+      color: #fff;
+      cursor: pointer;
+      box-sizing: border-box;
+
+      span {
+        margin-left: 10px;
+        margin-right: 5px;
+      }
+    }
+
+    &_body {
+      text-align: start;
+      height: 0;
+      width: 90%;
+      margin: auto;
+      overflow: hidden;
+
+      p {
+        font-size: 14px;
+        width: 95%;
+        margin: auto;
+        padding-bottom: 3px;
 
         span {
-            margin-left: 10px;
-            margin-right: 5px;
+          font-weight: 600;
         }
-    }
-    
-    
-    
-    &_body {
-        height: 0;
-        // padding: 0px 20px;
-        width: 90%;
-        margin: auto;
-        // padding-bottom: 3px;
-        // border: 1px solid #aaa;
-        // border-width: 0 1px;
-        // box-sizing: border-box;
-        overflow: hidden;
-        
-        p {
-            // margin: 20px 0;
-            // padding-left: 10px;
-            width: 95%;
-            margin: auto;
-            padding-bottom: 3px;
-            // padding: 10px 0;
+      }
 
-            // span {
-            //     font-weight: bold;
-            // }
-        }
-        
-        &.acd-active{
-            height: 100% !important;
-        }
+      &.acd-active {
+        height: 100% !important;
+      }
     }
+  }
 }
-// .acd_menu:last-child {
-//     .acd_menu_head {
-//         border-bottom: none;
-//     }
-// }

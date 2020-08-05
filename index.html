@@ -33,7 +33,7 @@
               <ul class="header__ul">
                 <li class="header__li"><a href="#team">About Us</a></li>
                 <li class="header__li"><a href="#recruit">Recruit</a></li>
-                <li class="header__li"><a href="#media">SNS</a></li>
+                <li class="header__li"><a href="#social">Social</a></li>
               </ul>
             </nav>
             <button class="mobile-menu__btn">
@@ -48,16 +48,22 @@
           <div class="swiper-container">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <div class="hero__title">速く！</div>
-                <img src="images/hero01-sp.jpg" />
+                <picture>
+                  <source srcset="images/hero01.webp" type="image/webp"/>
+                  <img src="images/hero01.jpg" alt="全体集合写真">
+                </picture>
               </div>
               <div class="swiper-slide">
-                <div class="hero__title">高く！</div>
-                <img src="images/hero02-sp.jpg" />
+                <picture>
+                  <source srcset="images/hero02.webp" type="image/webp"/>
+                  <img src="images/hero02.jpg" alt="メンバー募集写真">
+                </picture>
               </div>
               <div class="swiper-slide">
-                <div class="hero__title">熱く！</div>
-                <img src="images/hero03-sp.jpg" />
+                <picture>
+                  <source srcset="images/hero03.webp" type="image/webp"/>
+                  <img src="images/hero03.jpg" alt="試合風景写真">
+                </picture>
               </div>
             </div>
           </div>
@@ -65,185 +71,165 @@
 
         <div id="main-content">
           <main>
+           
             <section id="team" class="team">
               <div class="team__inner">
-                <div class="team__img cover-slide">
-                  <img
-                    class="img-zoom"
-                    src="images/hero04.jpg"
-                    alt=""
-                  />
-                </div>
 
                 <div class="team__texts">
+                  <div class="team__description">
+                    <h1>亘理小学校の児童を中心としたミニバスチームです。<br>
+                      男女約３０名が元気に活動しています!!
+                    </h1>
+                  </div>
                   <div class="team__texts-inner">
-                    <div class="team__title main-title item">
-                      <h1>わたりミニバスケットボール愛好会</h1>
-                    </div>
-                    <div class="team__description item">
-                      わたしたちは亘理小学校の児童を中心としたミニバスチームです。
-                      １年から６年生の男女約３０名が元気に活動しています。
-                    </div>
                   </div>
                 </div>
 
                 <div class="team__btn">
                   <button class="btn filled acd_menu_head"><span>もっと詳しく</span><i class="fas fa-arrow-alt-circle-right"></i></button>
                   <div class="acd_menu_body">
-                    <div class="acdc_menu_head"><span>活動日</span><i class="fas fa-caret-right"></i></div>
-                    <p class="acdc_menu_body">
-                      <span class="sp_text">
-                        火・木曜日：18時00分〜20時30分<br />
-                        土曜日：9時00分〜12時30分<br>
-                        日曜日：12時30分〜17時00分<br />
-                        ※休日は練習試合や遠征に行くこともあります。
-                      </span>
-                      <span class="dt_text">
+                    <p class="pc_text">
+                      <div class="acdc_menu_head"><span class="btn__title">活動日</span><i class="fas fa-caret-right"></i></div>
                         平日は火曜日と木曜日（18：00〜20：30）が練習日。<br />
                         土曜日は9：00〜12：30、日曜日は12：30〜17：00、週４回の練習です。<br />
                         土曜、日曜は練習試合や遠征に行くこともあり、時には他県（能代市、二本松市など）へ遠征（合宿）などもあります。<br />
                         Bリーグや高校生の試合をみんなで観戦に行くこともあります。
-                      </span>
-                    </p>
+                      </p>
+                    <!-- </p> -->
                     <div class="acdc_menu_head"><span>チームのコンセプト</span><i class="fas fa-caret-right"></i></div>
-                    <p class="acdc_menu_body">
-                      ・<span>走る！</span> <br>
-                      ・<span>ゴールデンエイジの間にとことんボールに触れる！</span><br>
-                      ・<span>中学・高校に進んで活躍できる選手を育てる！！</span><br>
-                      <!-- （バスケを楽しむためにはひたすら走り、ボールに触れ、世界で戦える選手の基礎をゴールデンエイジの間に身に付ける！） -->
-                    </p>
+                        <ol class="acdc_menu_body">
+                          <li>走る！わたり伝統のフットワーク！</li>
+                          <li>ゴールデンエイジの間にとことんボールに触れる！</li>
+                          <li>中学・高校に進んで活躍できる選手を育てる！！</li>
+                        </ol>
                     <div class="acdc_menu_head"><span>チーム年表</span><i class="fas fa-caret-right"></i></div>
-                    <p class="acdc_menu_body">
-                      1994年：チーム結成<br>
-                      1999年：男子、県大会初進出。<br>
-                      2002年：男子、県新人戦優勝。東北大会に出場。女子、県大会初進出。
-                    </p>
+                    <ul class="acdc_menu_body">
+                      <li>1994年：チーム結成</li>
+                      <li>1999年：男子、県大会初進出。</li>
+                      <li>2002年：男子、県新人戦優勝。東北大会に出場。女子、県大会初進出。</li>
+                    </ul>
                   </div>
                 </div>
+              </div>
+              <div class="section-title sp_text">
+                <p>Scedule</p>
+              </div>
+              
+              <div class="team__scedule sp_text">
+                <picture>
+                  <source srcset="images/scedule-bg.webp" type="image/webp"/>
+                  <img src="images/scedule-bg.jpg" alt="背景写真">
+                </picture>
+                <ul>
+                  <li>活動日</li>
+                  <li>火・木曜日：18時00分〜20時30分</li>
+                  <li>土曜日：9時00分〜12時30分</li>
+                  <li>日曜日：12時30分〜17時00分</li>
+                  <li>※亘理小学校体育館</li>
+                </ul>
+                                
               </div>
             </section>
 
             <section id="recruit" class="recruit">
+              <div class="section-title">
+                <p>Recruit</p>
+              </div>
               <div class="recruit__inner">
                 <div class="recruit__img cover-slide">
-                  <img
-                    class="img-zoom"
-                    src="images/hero05.jpg"
-                    alt=""
-                  />
+                  <picture>
+                    <source srcset="images/recruit01.webp" type="image/webp"/>
+                    <img src="images/recruit01.jpg" alt="試合風景写真">
+                  </picture>
                 </div>
                 <div class="recruit__texts">
                   <div class="recruit__texts-inner">
-                    <div class="recruit__title main-title item">
+                    <div class="recruit__title main-title">
                       <h2>新メンバーを募集しています！</h2>
                     </div>
-                    <!-- <div class="recruit__sub sub-title item"></div> -->
-                    <div class="recruit__description item">
-                      
-                        バスケットやってみたい人、運動が好きな人、等々、どなたの参加もお待ちしています。試しにやってみたい、何かスポーツをやらせてみたいという方は、お気軽に体育館へのぞきに来てください！！
-                      
+                    <div class="recruit__description">
+                        <p>バスケットをやってみたい人、運動が好きな人、等々、どなたの参加もお待ちしています。お気軽に体育館へのぞきに来てください！！</p>
                     </div>
                   </div>
                 </div>
-                <div class="recruit__btn item">
+                <div class="recruit__btn">
                   <button class="btn filled acd_menu_head"><span>入会案内</span><i class="fas fa-arrow-alt-circle-right"></i></button>
-                  <div class="acd_menu_body">
-                    <p>
-                      <span>＊会費</span><br>
-                      →月会費１０００円です。<br>
-                      <span>＊入会にあたって準備する用品</span><br>
-                      →特にありません。(学校の上靴があればOKです)<br>
-                      <span>＊週4回全て参加しなくてはいけませんか？</span><br>
-                      →家庭、学校が優先です。参加できる日、時間だけOKです。<br>
-                      <span>＊練習や試合時は親の付き添いが必要ですか？</span><br>
-                      →基本的には不要です。夜の練習にはできるだけ送迎をお願いします。<br>
-                    
-                    </p>
-                  </div>
+                  <dl class="acdc_menu_body sp_text">
+                    <dt>会費</dt><dd>月会費は1,000円です。</dd>
+                    <dt>入会にあたって準備する用品</dt><dd>特にありません。(学校の上靴があればOKです)</dd>
+                    <dt>週4回全て参加しなくてはいけませんか？</dt><dd>家庭、学校が優先です。参加できる日、時間だけOKです。</dd>
+                    <dt>練習や試合時は親の付き添いが必要ですか？</dt><dd>基本的には不要です。夜の練習にはできるだけ送迎をお願いします。</dd>
+                  </dl>
                 </div>
               </div>
             </section>
 
-            <section id="media" class="media">
-              <div class="tab">
-                <ul class="tab__label">
-                  <li>
-                    <a href="#" class="active" data-id="tab__contact"
-                      >ギャラリー</a
-                    >
-                  </li>
-                  <li><a href="#" data-id="tab__info">試合結果</a></li>
-                  <li><a href="#" data-id="tab__youtube">動画</a></li>
-                </ul>
-                <div class="tab__content active" id="tab__contact">
-                  <a
-                    data-pin-do="embedBoard"
-                    data-pin-lang="ja"
-                    data-pin-board-width="960"
-                    data-pin-scale-height="350"
-                    data-pin-scale-width="300"
-                    href="https://www.pinterest.jp/mbbcwatari/%25E3%2582%258F%25E3%2581%259F%25E3%2582%258A%25E3%2583%259F%25E3%2583%258B%25E3%2583%2590%25E3%2582%25B9/"
-                  ></a>
-                </div>
-                <div class="tab__content" id="tab__info">
-                  <a class="twitter-timeline" data-width="100%" data-chrome="noheader nofooter" data-height="400" href="https://twitter.com/watarimbbc1994?ref_src=twsrc%5Etfw">Tweets by watarimbbc1994</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                  <script
-                    async
-                    src="https://platform.twitter.com/widgets.js"
-                    charset="utf-8"
-                  ></script>
-                </div>
-                <div class="tab__content" id="tab__youtube">
-                  <p>
-                    ライバルに差をつけろ！<br />
-                    自宅できる練習メニューを紹介!!
-                  </p>
-                  <iframe
-                    width="100%"
-                    height="auto"
-                    src="https://www.youtube.com/embed/playlist?list=UUrY1uDnCmxZ6cJjdlsH1_9Q"
-                    rel="0"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                  ></iframe>
-                </div>
+            <section id="social" class="social">
+
+              <div class="section-title">
+                <p>Social</p>
               </div>
-              <!-- <div class="line">
-                <div class="line__inner">
-                  <div class="line__wrap">
-                    <div class="line__content" id="line__contact">
+
+              <div class="social__inner">
+              
+                <div class="tab">
+                  <ul class="tab__label">
+                    <li>
+                      <a href="#" class="active" data-id="tab__twitter"
+                        >ギャラリー</a
+                      >
+                    </li>
+                    <li><a href="#" data-id="tab__pinterest">試合結果</a></li>
+                    <li><a href="#" data-id="tab__youtube">練習動画</a></li>
+                  </ul>
+                  
+                  <div class="tab__content-wrapper">
+
+                    <div class="tab__content active" id="tab__twitter">
+                        <p class="tab__content-name">
+                          ギャラリー
+                        </p>
                       <a
-                        data-pin-do="embedBoard"
-                        data-pin-lang="ja"
-                        data-pin-board-width="960"
-                        data-pin-scale-height="480"
-                        data-pin-scale-width="300"
-                        href="https://www.pinterest.jp/mbbcwatari/%25E3%2582%258F%25E3%2581%259F%25E3%2582%258A%25E3%2583%259F%25E3%2583%258B%25E3%2583%2590%25E3%2582%25B9/"
+                      data-pin-do="embedBoard"
+                      data-pin-lang="ja"
+                      data-pin-board-width="960"
+                      data-pin-scale-height="350"
+                      data-pin-scale-width="300"
+                      href="https://www.pinterest.jp/mbbcwatari/%25E3%2582%258F%25E3%2581%259F%25E3%2582%258A%25E3%2583%259F%25E3%2583%258B%25E3%2583%2590%25E3%2582%25B9/"
                       ></a>
                     </div>
-                    <div class="line__content active" id="line__info">
+                    
+                    <div class="tab__content" id="tab__pinterest">
+                        <p class="tab__content-name">
+                          試合結果
+                        </p>
                       <a class="twitter-timeline" data-width="100%" data-chrome="noheader nofooter" data-height="400" href="https://twitter.com/watarimbbc1994?ref_src=twsrc%5Etfw">Tweets by watarimbbc1994</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                       <script
-                        async
-                        src="https://platform.twitter.com/widgets.js"
-                        charset="utf-8"
+                      async
+                      src="https://platform.twitter.com/widgets.js"
+                      charset="utf-8"
                       ></script>
                     </div>
+
                   </div>
-                  <div class="line__content" id="line__youtube">
-                    <iframe
-                      width="auto"
-                      height="auto"
-                      src="https://www.youtube.com/embed/playlist?list=UUrY1uDnCmxZ6cJjdlsH1_9Q"
-                      rel="0"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen
-                    ></iframe>
-                  </div>
+                    
+                    <div class="tab__content tab__youtube movie-wrap" id="tab__youtube">
+                        <p class="tab__content-name">
+                          トレーニング動画
+                        </p>
+                        <iframe
+                        width="100%"
+                        height="auto"
+                        src="https://www.youtube.com/embed/playlist?list=UUrY1uDnCmxZ6cJjdlsH1_9Q"
+                        rel="0"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                        ></iframe>
+                      </div>
+
                 </div>
-              </div> -->
+              </div>
             </section>
           </main>
         </div>
@@ -263,7 +249,7 @@
                 <ul class="footer__ul">
                   <li class="footer__li"><a href="#team">About us</a></li>
                   <li class="footer__li"><a href="#recruit">Recruit</a></li>
-                  <li class="footer__li"><a href="#media">SNS</a></li>
+                  <li class="footer__li"><a href="#social">Social</a></li>
                   <li class="footer__li">
                     <div class="modal__show">Contact</div>
                     <div id="contact" class="modal">
@@ -274,7 +260,7 @@
                         <iframe
                           src="https://docs.google.com/forms/d/e/1FAIpQLSdwldO9kgxMkCaU-RIMtv4GAj-62L3EofP76Zvl7wUWckkYgw/viewform?embedded=true"
                           width="100%"
-                          height="450"
+                          height="600px"
                           frameborder="0"
                           marginheight="0"
                           marginwidth="0"
@@ -314,8 +300,8 @@
             </a>
           </li>
           <li class="mobile-menu__item">
-            <a href="#media" class="mobile-menu__link">
-              <span class="main-title">SNS</span><br />
+            <a href="#social" class="mobile-menu__link">
+              <span class="main-title">Social</span><br />
               <span class="sub-title">写真・試合結果</span>
             </a>
           </li>

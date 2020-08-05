@@ -22,49 +22,150 @@ Stylesheet: 600px以上のタブレットやモニタで適用
   &__copyright {
     margin-top: 30px;
   }
-}
 
-.team {
-  &__inner {
-    padding: 50px;
+  .sitename {
+    font-size: 30px;
+    
+    h2 {
+      font-size: 40px;
+      padding-left: 5px;
+    }
+    
   }
 }
 
-// .tab {
-//   display: none;
-// }
+.hero {
+  padding-top: $headerHeight;
+}
 
-// .line {
-//   display: block;
-//   width: 90%;
-//   margin: 0 auto;
+.team,.recruit {
+  .btn,.fas {
+    display: none;
+  }
+
+  &__inner {
+    padding: 20px;
+  }
+
+  &__texts {
+    width: 85%;
+    margin: auto;
+  }
   
-//   &__inner {
-//     padding: 0 50px;
-//   }
+  &__btn {
+    width: 80%;
+    margin: auto;
+    text-align: start;
+    
+      span:not(.sp_text) {
+        display: inline-block;
+        padding: 3px 10px;
+        font-weight: bold;
+        font-size: 20px;
+        color: $cWhite;
+        background-color: $cGreen;
+        letter-spacing: 0.2rem;
+      }     
+    }
+
+  h1,h2{
+    font-size: 22px;
+  }
+
+  dl,ul,ol,p{
+    font-size: 18px;
+  }
+
+  .sp_text {
+    display: none;
+  }
+
+  .pc_text {
+    display: block;
+  }
   
-//   &__wrap {
-//     display: flex;
-//     flex-wrap: wrap;
-//     justify-content: space-between;
-//     margin-bottom: 50px;
-//   }
+  &__scedule {
+    p {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+}
+
+.section-title p {
+  font-size: 30px;
+}
+
+.social {
+
+  &__inner{
+    background-color: $cGreen;
+    padding-bottom: 50px;
+  }
+}
+
+.tab__content-name {
+  display: block;
+}
+
+.tab {
+  width: 90%;
+  margin: auto;
+
+  &__label {
+    display: none;
+  }
   
-//   &__content {
-//     flex-basis: 47%;
-//     box-shadow: 2px 2px 4px -2px gray;
-//   }
-// }
+    &__content-wrapper{
+      display: flex;
+      justify-content: space-between;
+      padding-top: 50px;  
+      margin-bottom: 50px;  
+    }
+
+    &__content{
+      flex-basis: 45%;
+    }
+
+    &__content-name {
+      font-size: 20px;
+      color: $cWhite;
+    }
+
+  .movie-wrap {
+    position: relative;
+    padding-bottom: 56.25%; /*アスペクト比 16:9の場合の縦幅*/
+    height: 0;
+    overflow: hidden;
+    
+    iframe {
+      position: absolute;
+      top: 16px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
 
 .footer {
   &__wrap {
     display: flex;
     justify-content: space-between;
-    text-align: left;
+    align-items: center;
+    .sitename{
+      
+      h2 {
+        font-size: 30px;
+        margin: 0;
+      }
+    }
   }
 
-  &__nav {
-    line-height: 90px;
+  .footer__ul {
+    padding-bottom: 0;
   }
 
   &__copyright {

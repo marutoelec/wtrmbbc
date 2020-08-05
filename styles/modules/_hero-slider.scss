@@ -1,13 +1,14 @@
-$imgheight: 480px;
+$imgheight: 210px;
+$imgheight-600up: 480px;
 
 .hero {
-  // @extend .pb-lg;
   padding-bottom: 10px;
 
   img {
     display: block;
     margin: 0 auto;
     height: $imgheight;
+    object-fit: contain;
   }
 
   .swiper-slide {
@@ -29,8 +30,7 @@ $imgheight: 480px;
       width: 90%;
       text-align: center;
       height: 100%;
-      max-width: 100%;
-      object-fit: contain;
+      object-fit: cover;
       transform: scale(1.3);
       transition: transform 1.2s ease;
     }
@@ -46,6 +46,19 @@ $imgheight: 480px;
         text-shadow: 1px 2px 3px #808080;
         transform: translate(-50%, -50%);
       }
+    }
+  }
+}
+
+@media screen and (min-width: 600px){
+  .hero{
+
+    img {
+      height: $imgheight-600up;
+    }
+
+    .swiper-slide{
+      height: $imgheight-600up;
     }
   }
 }

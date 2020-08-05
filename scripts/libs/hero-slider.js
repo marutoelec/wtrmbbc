@@ -14,7 +14,7 @@ class HeroSlider {
       speed: 2000,
       breakpoints: {
         1024: {
-          slidesPerView: 2,
+          slidesPerView: 1.2,
         },
       },
     });
@@ -23,7 +23,7 @@ class HeroSlider {
   start(options = {}) {
     options = Object.assign(
       {
-        delay: 4000,
+        delay: 5000,
         disableOnInteraction: false,
       },
       options

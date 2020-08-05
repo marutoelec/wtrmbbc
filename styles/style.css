@@ -6,11 +6,13 @@
 .hero img {
   display: block;
   margin: 0 auto;
-  height: 480px;
+  height: 210px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .hero .swiper-slide {
-  height: 480px;
+  height: 210px;
   overflow: hidden;
 }
 
@@ -33,9 +35,8 @@
   width: 90%;
   text-align: center;
   height: 100%;
-  max-width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
   -webkit-transition: -webkit-transform 1.2s ease;
@@ -55,6 +56,15 @@
   text-shadow: 1px 2px 3px #808080;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 600px) {
+  .hero img {
+    height: 480px;
+  }
+  .hero .swiper-slide {
+    height: 480px;
+  }
 }
 
 .hero {
@@ -64,11 +74,13 @@
 .hero img {
   display: block;
   margin: 0 auto;
-  height: 480px;
+  height: 210px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .hero .swiper-slide {
-  height: 480px;
+  height: 210px;
   overflow: hidden;
 }
 
@@ -91,9 +103,8 @@
   width: 90%;
   text-align: center;
   height: 100%;
-  max-width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
   -webkit-transition: -webkit-transform 1.2s ease;
@@ -115,151 +126,12 @@
           transform: translate(-50%, -50%);
 }
 
-.animate-title.inview {
-  opacity: 1;
-}
-
-.animate-title.inview .char {
-  display: inline-block;
-  -webkit-animation-name: kf-animate-chars;
-          animation-name: kf-animate-chars;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-timing-function: cubic-bezier(0.39, 1, 57, 0.58, 1);
-          animation-timing-function: cubic-bezier(0.39, 1, 57, 0.58, 1);
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-}
-
-.animate-title.inview .char:nth-child(1) {
-  -webkit-animation-delay: 0.04s;
-          animation-delay: 0.04s;
-}
-
-.animate-title.inview .char:nth-child(2) {
-  -webkit-animation-delay: 0.08s;
-          animation-delay: 0.08s;
-}
-
-.animate-title.inview .char:nth-child(3) {
-  -webkit-animation-delay: 0.12s;
-          animation-delay: 0.12s;
-}
-
-.animate-title.inview .char:nth-child(4) {
-  -webkit-animation-delay: 0.16s;
-          animation-delay: 0.16s;
-}
-
-.animate-title.inview .char:nth-child(5) {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
-}
-
-.animate-title.inview .char:nth-child(6) {
-  -webkit-animation-delay: 0.24s;
-          animation-delay: 0.24s;
-}
-
-.animate-title.inview .char:nth-child(7) {
-  -webkit-animation-delay: 0.28s;
-          animation-delay: 0.28s;
-}
-
-.animate-title.inview .char:nth-child(8) {
-  -webkit-animation-delay: 0.32s;
-          animation-delay: 0.32s;
-}
-
-.animate-title.inview .char:nth-child(9) {
-  -webkit-animation-delay: 0.36s;
-          animation-delay: 0.36s;
-}
-
-.animate-title.inview .char:nth-child(10) {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
-}
-
-.animate-title.inview .char:nth-child(11) {
-  -webkit-animation-delay: 0.44s;
-          animation-delay: 0.44s;
-}
-
-.animate-title.inview .char:nth-child(12) {
-  -webkit-animation-delay: 0.48s;
-          animation-delay: 0.48s;
-}
-
-.animate-title.inview .char:nth-child(13) {
-  -webkit-animation-delay: 0.52s;
-          animation-delay: 0.52s;
-}
-
-.animate-title.inview .char:nth-child(14) {
-  -webkit-animation-delay: 0.56s;
-          animation-delay: 0.56s;
-}
-
-.animate-title.inview .char:nth-child(15) {
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
-}
-
-.animate-title.inview .char:nth-child(16) {
-  -webkit-animation-delay: 0.64s;
-          animation-delay: 0.64s;
-}
-
-.animate-title.inview .char:nth-child(17) {
-  -webkit-animation-delay: 0.68s;
-          animation-delay: 0.68s;
-}
-
-.animate-title.inview .char:nth-child(18) {
-  -webkit-animation-delay: 0.72s;
-          animation-delay: 0.72s;
-}
-
-.animate-title.inview .char:nth-child(19) {
-  -webkit-animation-delay: 0.76s;
-          animation-delay: 0.76s;
-}
-
-.animate-title.inview .char:nth-child(20) {
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
-}
-
-@-webkit-keyframes kf-animate-chars {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+@media screen and (min-width: 600px) {
+  .hero img {
+    height: 480px;
   }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
-@keyframes kf-animate-chars {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+  .hero .swiper-slide {
+    height: 480px;
   }
 }
 
@@ -580,36 +452,45 @@
   opacity: 1;
 }
 
-.acd_menu_head, .acdc_menu_head {
-  padding: 5px;
-  background: #aaa;
-  border-bottom: 1px solid #fff;
-  color: #fff;
-  cursor: pointer;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.acd_menu_head span, .acdc_menu_head span {
-  margin-left: 10px;
-  margin-right: 5px;
-}
-
-.acd_menu_body, .acdc_menu_body {
-  height: 0;
-  width: 90%;
-  margin: auto;
-  overflow: hidden;
-}
-
-.acd_menu_body p, .acdc_menu_body p {
-  width: 95%;
-  margin: auto;
-  padding-bottom: 3px;
-}
-
-.acd_menu_body.acd-active, .acdc_menu_body.acd-active {
-  height: 100% !important;
+@media screen and (max-width: 599px) {
+  .acd_menu_head,
+  .acdc_menu_head {
+    padding: 5px;
+    background: #aaa;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .acd_menu_head span,
+  .acdc_menu_head span {
+    margin-left: 10px;
+    margin-right: 5px;
+  }
+  .acd_menu_body,
+  .acdc_menu_body {
+    text-align: start;
+    height: 0;
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+  }
+  .acd_menu_body p,
+  .acdc_menu_body p {
+    font-size: 14px;
+    width: 95%;
+    margin: auto;
+    padding-bottom: 3px;
+  }
+  .acd_menu_body p span,
+  .acdc_menu_body p span {
+    font-weight: 600;
+  }
+  .acd_menu_body.acd-active,
+  .acdc_menu_body.acd-active {
+    height: 100% !important;
+  }
 }
 
 #container {
@@ -853,6 +734,8 @@ Stylesheet: ベーススタイル
 ******************************************************************/
 body {
   font-family: 'Patua One', cursive, "Kosugi", sans-serif;
+  max-width: 960px;
+  margin: auto;
 }
 
 img {
@@ -876,7 +759,7 @@ img {
   font-size: 25px;
 }
 
-.mb-sm, .team__img, .recruit__img, .team__title, .recruit__title {
+.mb-sm, .team, .recruit, .team__img, .recruit__img {
   margin-bottom: 16px !important;
 }
 
@@ -884,7 +767,7 @@ img {
   margin-bottom: 80px !important;
 }
 
-.pb-sm, .footer__ul {
+.pb-sm {
   padding-bottom: 16px !important;
 }
 
@@ -898,9 +781,9 @@ img {
   max-width: 1070px;
 }
 
-.header-fix, .team, .recruit, .media {
-  padding-top: 140px;
-  margin-top: -140px;
+.header-fix, .team, .recruit, .social {
+  padding-top: 130px;
+  margin-top: -130px;
 }
 
 .flex, .header__ul, .team__inner, .recruit__inner, .footer__ul {
@@ -913,14 +796,24 @@ img {
           flex-direction: column;
 }
 
+.section-title {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.section-title p {
+  text-align: center;
+  font-size: 24px;
+}
+
 .header {
   width: 100%;
   text-align: center;
   position: fixed;
   top: 0;
   left: 0;
-  height: 75px;
-  background-color: #d5f3da;
+  height: 65px;
+  background-color: #eaebe6;
   z-index: 10;
 }
 
@@ -957,20 +850,19 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 25px;
 }
 
 .header .sitename h2 {
-  font-size: 7.2vw;
+  font-size: 29px;
   margin-bottom: 0;
 }
 
 .header .sitename__img {
-  width: 1.9em;
+  width: 45px;
 }
 
 .hero {
-  padding-top: 75px;
+  padding-top: 65px;
 }
 
 .team__inner, .recruit__inner {
@@ -996,39 +888,63 @@ img {
 }
 
 .team__texts, .recruit__texts {
-  padding-left: 20px;
-  padding-right: 20px;
   padding-bottom: 10px;
 }
 
-.team__title, .recruit__title {
-  text-align: center;
-  line-height: 1.1;
-}
-
 .team__description, .recruit__description {
-  font-size: 4vw;
+  font-size: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .team__btn, .recruit__btn {
   text-align: center;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
 }
 
-.team__btn .acd_menu_body, .recruit__btn .acd_menu_body {
-  text-align: start;
+.team__scedule, .recruit__scedule {
+  position: relative;
+}
+
+.team__scedule img, .recruit__scedule img {
+  opacity: 0.9;
+  display: block;
+  height: 200px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+
+.team__scedule ul, .recruit__scedule ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: bold;
+}
+
+.team__scedule ul li, .recruit__scedule ul li {
+  padding-left: 15px;
+  padding-bottom: 10px;
+  text-indent: 15px;
+}
+
+.team__scedule ul li:first-child, .recruit__scedule ul li:first-child {
+  padding-top: 15px;
+  text-indent: 0;
+  font-size: 1.2em;
 }
 
 .team h1, .team h2, .recruit h1, .recruit h2 {
-  font-size: 4.2vw;
+  font-size: 16px;
+  font-weight: 600;
 }
 
-.team p, .recruit p {
-  font-size: 4vw;
+.team h2, .recruit h2 {
+  text-align: center;
 }
 
-.team .dt_text, .recruit .dt_text {
+.team .pc_text, .recruit .pc_text {
   display: none;
 }
 
@@ -1036,14 +952,47 @@ img {
   width: 95%;
 }
 
-.recruit p span {
-  font-weight: bold;
+.team ol, .recruit ol {
+  margin-left: -10px;
+  padding-right: 0;
+  font-size: 17px;
+  width: 100%;
 }
 
-#tab__youtube iframe {
-  position: absolute;
-  width: 90%;
-  height: 63%;
+.team ul, .recruit ul {
+  list-style: none;
+  padding: unset;
+  font-size: 16px;
+  width: 100%;
+}
+
+.team dl {
+  padding: unset;
+  font-size: 18px;
+}
+
+.team dl dd {
+  text-indent: 40px;
+}
+
+.recruit dl {
+  padding: unset;
+  font-size: 16px;
+}
+
+.tab__content-name {
+  display: none;
+}
+
+.movie-wrap {
+  padding-bottom: 56.25%;
+  /*アスペクト比 16:9の場合の縦幅*/
+  height: 0;
+  overflow: hidden;
+}
+
+.movie-wrap iframe {
+  min-height: 250px;
 }
 
 .footer {
@@ -1055,6 +1004,7 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
+  padding-bottom: 16px;
 }
 
 .footer__li {
@@ -1073,7 +1023,7 @@ img {
 }
 
 .footer .sitename {
-  font-size: 7.5vw;
+  font-size: 30px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1090,7 +1040,7 @@ img {
 }
 
 .footer .sitename h2 {
-  font-size: 7vw;
+  font-size: 24px;
 }
 
 @media screen and (max-width: 599px) {
@@ -1136,12 +1086,10 @@ img {
     background: #096F0A;
     color: white;
     font-size: 16px;
-    min-height: 300px;
+    min-height: 250px;
     height: 100%;
     padding: 15px;
     display: block;
-    position: relative;
-    padding-top: 3%;
     overflow: hidden;
   }
 }
@@ -1175,8 +1123,105 @@ Stylesheet: 600px以上のタブレットやモニタで適用
   .header__copyright {
     margin-top: 30px;
   }
-  .team__inner {
-    padding: 50px;
+  .header .sitename {
+    font-size: 30px;
+  }
+  .header .sitename h2 {
+    font-size: 40px;
+    padding-left: 5px;
+  }
+  .hero {
+    padding-top: 65px;
+  }
+  .team .btn, .team .fas, .recruit .btn, .recruit .fas {
+    display: none;
+  }
+  .team__inner, .recruit__inner {
+    padding: 20px;
+  }
+  .team__texts, .recruit__texts {
+    width: 85%;
+    margin: auto;
+  }
+  .team__btn, .recruit__btn {
+    width: 80%;
+    margin: auto;
+    text-align: start;
+  }
+  .team__btn span:not(.sp_text), .recruit__btn span:not(.sp_text) {
+    display: inline-block;
+    padding: 3px 10px;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    background-color: #096F0A;
+    letter-spacing: 0.2rem;
+  }
+  .team h1, .team h2, .recruit h1, .recruit h2 {
+    font-size: 22px;
+  }
+  .team dl, .team ul, .team ol, .team p, .recruit dl, .recruit ul, .recruit ol, .recruit p {
+    font-size: 18px;
+  }
+  .team .sp_text, .recruit .sp_text {
+    display: none;
+  }
+  .team .pc_text, .recruit .pc_text {
+    display: block;
+  }
+  .team__scedule p, .recruit__scedule p {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .section-title p {
+    font-size: 30px;
+  }
+  .social__inner {
+    background-color: #096F0A;
+    padding-bottom: 50px;
+  }
+  .tab__content-name {
+    display: block;
+  }
+  .tab {
+    width: 90%;
+    margin: auto;
+  }
+  .tab__label {
+    display: none;
+  }
+  .tab__content-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 50px;
+    margin-bottom: 50px;
+  }
+  .tab__content {
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+  }
+  .tab__content-name {
+    font-size: 20px;
+    color: white;
+  }
+  .tab .movie-wrap {
+    position: relative;
+    padding-bottom: 56.25%;
+    /*アスペクト比 16:9の場合の縦幅*/
+    height: 0;
+    overflow: hidden;
+  }
+  .tab .movie-wrap iframe {
+    position: absolute;
+    top: 16px;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
   .footer__wrap {
     display: -webkit-box;
@@ -1185,10 +1230,16 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    text-align: left;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .footer__nav {
-    line-height: 90px;
+  .footer__wrap .sitename h2 {
+    font-size: 30px;
+    margin: 0;
+  }
+  .footer .footer__ul {
+    padding-bottom: 0;
   }
   .footer__copyright {
     margin-top: 30px;
@@ -1201,32 +1252,6 @@ Stylesheet: 600px以上のタブレットやモニタで適用
 Stylesheet: 960px以上のモニタで適用
 
 ******************************************************************/
-  .font-sm {
-    font-size: 16px;
-  }
-  .font-md {
-    font-size: 19px;
-  }
-  .font-lr {
-    font-size: 23px;
-  }
-  .font-lg {
-    font-size: 36px;
-  }
-  .mb-lg {
-    margin-bottom: 150px !important;
-  }
-  .pb-lg {
-    padding-bottom: 150px !important;
-  }
-  .flex, .header__ul, .team__inner, .recruit__inner, .footer__ul {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
   .header__li, .footer__li {
     font-size: 1.5rem;
     padding-left: 1.2rem;
@@ -1239,10 +1264,6 @@ Stylesheet: 960px以上のモニタで適用
   }
   .team__inner, .recruit__inner {
     padding: 50px;
-  }
-  .team__img, .team__texts, .recruit__img, .recruit__texts {
-    -ms-flex-preferred-size: 47%;
-        flex-basis: 47%;
   }
   .recruit__inner {
     -webkit-box-orient: horizontal;
