@@ -1,0 +1,30 @@
+{
+  "name": "wtrmbbc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "watch": "webpack --mode development --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marutoelec/wtrmbbc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marutoelec/wtrmbbc/issues"
+  },
+  "homepage": "https://github.com/marutoelec/wtrmbbc#readme",
+  "devDependencies": {
+    "css-loader": "^4.2.1",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^9.0.3",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
+}
